@@ -6,13 +6,15 @@ date-format: long
 author: "Andrea Gomez Vargas & Emanuel Ciardullo"
 format:
   revealjs: 
-    theme: [default, custom.scss]
+    theme: [argento.scss]
     self-contained: false
     slide-number: c/t
     logo: userlogo.png
     highlight-style: a11y
     css: logo.css
     footer: "[**`ARcenso` - Data from Argentina’s Population Census**](https://soyandrea.github.io/arcenso/)"
+title-slide-attributes:
+  class: arg-title1
 knitr:
   opts_chunk: 
     echo: true
@@ -22,20 +24,25 @@ knitr:
 from: markdown+emoji
 ---
 
-## Hi 
+## Hi {.arg-title1}
 
-## ARcenso{.smaller}
+## ARcenso{.smaller .arg-title2}
 <br>
 
 Supported by the rOpenSci Champions Program cohort 2023-2024^[[Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)], this project is led by lead developer Andrea Gómez Vargas, co-developer Emanuel Ciardullo, and mentor Luis D. Verde.
 
 It is a citizen-driven initiative that emerged from our professional experience working with census data at the National Institute of Statistics and Census of Argentina (INDEC).
 
-<br>
 
 ![](images/icon_lettering_white.svg){width="30%"}
 
-## Project Overview 
+
+
+::: footer
+[**ARcenso - Data from Argentina’s Population Census**](https://soyandrea.github.io/arcenso/)
+:::
+
+## Project Overview {.arg-title3 .smaller}
 
 <br>
 
@@ -43,7 +50,7 @@ It is a citizen-driven initiative that emerged from our professional experience 
 **Develop an R data package that makes available the official national population census data of Argentina**, produced by the National Institute of Statistics and Censuses (INDEC), covering the period from 1970 to 2022. The data are homogenized, organized, and ready to use. The package provides open access to these datasets, facilitating their use by the public, researchers, and decision-makers.
 
 
-## Problem Statement 
+## Problem Statement {.arg-title4 .smaller}
 
 <br>
 
@@ -51,7 +58,7 @@ Historical census results for **1970, 1980, 1991, 2001, 2010 and 2022** in Argen
 
 This fragmentation limits data accessibility, interoperability, and reuse, especially for users working within the R environment.
 
-## Proposed Solution
+## Proposed Solution {.arg-title5}
 
 > From excel tables to **ordered tables** in R
 
@@ -69,9 +76,9 @@ This fragmentation limits data accessibility, interoperability, and reuse, espec
 :::
 
 
-# Conceptual framework
+# Conceptual framework {.arg-title6}
 
-## FAIR Principles{.smaller}
+## FAIR Principles{.smaller .arg-title5}
 
 **Findable:**
 
@@ -89,7 +96,7 @@ Tidy, well-structured tables that enable easy integration with other demographic
 
 Includes detailed variable descriptions, standardized coding across census years, open licensing, and reproducible data structures that facilitate long-term use and cross-study comparisons.
 
-## Census Data: Themes and Structure (UN Framework){.smaller}
+## Census Data: Themes and Structure (UN Framework){.smaller .arg-title5}
 
 <br>
 
@@ -127,10 +134,10 @@ Includes detailed variable descriptions, standardized coding across census years
 :::
 
 
-# From Chaos to Package 📦
+# From Chaos to Package 📦  {.arg-title7}
 
 
-## Problems: rain of excels and non-standardized formats
+## Problems: rain of excels and non-standardized formats {.arg-title5}
 
 ::: {.r-stack}
 
@@ -145,7 +152,7 @@ Includes detailed variable descriptions, standardized coding across census years
 
 
 
-## The Process {.smaller}
+## The Process {.smaller .arg-title5}
 
 <br>
 
@@ -182,7 +189,7 @@ Includes detailed variable descriptions, standardized coding across census years
 
 
 
-## Data Availability Roadmap{.tabla-chica}
+## Data Availability Roadmap {.tabla-chica .smaller .arg-title8}
 
 <br>
 
@@ -200,7 +207,7 @@ Includes detailed variable descriptions, standardized coding across census years
 
 
 
-## {ARcenso} 📦
+## {ARcenso} 📦 {.arg-title8}
 
 <br>
 
@@ -214,14 +221,15 @@ remotes::install_github("SoyAndrea/arcenso")
 <br>
 <br>
 
-### Package activation
+### Package activation 
 
 ```{r}
+
 library(arcenso)
 ```
 
 
-## `get_census()`
+## `get_census()` {.smaller .arg-title2}
 
 > get tables 
 
@@ -232,7 +240,7 @@ get_census( year = 1970,
 ```
 
 
-## `check_repository()`
+## `check_repository()` {.smaller .arg-title2}
 
 > report of available tables
 
@@ -245,7 +253,7 @@ check_repository( year = 1970,
 ```
 
 
-## `ARcenso()`
+## `ARcenso()` {.smaller .arg-title2}
 
 > shinyapp for consulting
 
@@ -258,22 +266,22 @@ arcenso()
 ![](images/shiny.png){width="120%" fig-align="center"}
 
 
-## Documentation
+## Documentation {.smaller .arg-title5}
 
 ```{r echo=FALSE}
 knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
 ```
+ 
+# Powered by Community 🤝  {.arg-title7}
 
-# Powered by Community 🤝
-
-## Thanks to Our Community
+## Thanks to Our Community  {.arg-title5}
 
 ![](images/arcenso-meet.png)
 
 Thanks to the feedback, collaboration, and support of R communities such as rOpenSci, LatinR, and R en Buenos Aires, as well as the joint work of fellow demographers, statisticians, and sociologists, `ARcenso` was built.
 
 
-## Community involvement provided:
+## Community involvement provided: {.smaller .arg-title2}
 
 - Technical assistance in solving coding and data challenges.
 
@@ -297,7 +305,7 @@ Thanks to the feedback, collaboration, and support of R communities such as rOpe
 
 <!-- ::: -->
 
-## Gracias 😁
+## Gracias 😁 {.arg-title2}
 
 ::: columns
 ::: {.column width="50%"}
@@ -325,3 +333,8 @@ Statistician
 :::
 
 :::
+
+
+
+
+
