@@ -1,5 +1,6 @@
 ---
-title: "`ARcenso`: a Package Born From `Chaos`, Powered by `Community`"
+title: "`ARcenso` ⭐⭐⭐: "
+subtitle: "a Package Born From `Chaos`, Powered by `Community`"
 institute: "useR! 2025"
 date: "08/09/2025"
 date-format: long
@@ -24,42 +25,112 @@ knitr:
 from: markdown+emoji
 ---
 
+## Hi!
 
-# Código con mirada social
 
-## me presento 
+::: {.columns}
 
-# Caos en los datos censales 
+::: {.column width="40%"}
 
-## Ronda censal 2020
+![](images/AndreGomezVargas58-2.jpg){width="70%" style="border-radius: 80%;"}
 
-CONTEXTO
+:::
+
+::: {.column width="60%"}
+
+- Socióloga
+
+- Aprendí R en comunidad
+
+- Código con mirada social 
+
+- Analista de Estadísticas de Población en la ONE de Argentina (INDEC)
+
+- rOpenSci Champion cohort 2023-2024
+
+:::
+
+:::
+
 
 ## ¿Por qué son importante los datos censales? 
 
 
-::: {.incremental}
+- Permiten conocer las características y necesidades de la población.
 
-Permiten conocer las características y necesidades de la población.
+- Son esenciales para diseñar políticas públicas efectivas.
 
-Son esenciales para diseñar políticas públicas efectivas.
+- Fundamentan la planificación social, económica y territorial.
 
-Fundamentan la planificación social, económica y territorial.
+- Son insumo para la investigación académica, social y de mercado.
 
-Son insumo para la investigación académica, social y de mercado.
+- Y son la base para tomar decisiones basadas en evidencia.
 
-Y son la base para tomar decisiones basadas en evidencia.
+
+## El operativo censal 2022
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+Argentina realizó su operativo censal en 2022, el más importante del país en términos estadísticos. 
+
+A partir de 2023 comenzó el proceso de publicación de los resultados definitivos, en el que participamos activamente. 
+
+Además de presentar los datos, debíamos editar y generar cientos de cuadros en Excel desde R para cada temática, en un proceso muy artesanal.
+
 :::
+
+::: {.column width="30%"}
+
+<br>
+<br>
+
+![](images/rondacensal.png){width="80%" style="border-radius: 80%;"}
+
+:::
+
+:::
+
 
 ##  Una idea (y una oportunidad) en medio del caos
 
+::: {.columns}
 
-"Cientos de Excel que no sabemos si alguien usa. Me pregunté: ¿por qué no existe ya un recurso que los integre y vuelva analizables en R? Esa pregunta quedó dando vueltas… hasta que apareció rOpenSci."
+::: {.column width="70%"}
+- Teníamos cientos de Excel para publicar.
 
+- Nadie sabía si se usaban… o cómo.
+
+- No existía una base pública para disponibilizarlos.
+
+- Entonces pensé: *esto podría ser un paquete en R.*
+
+- Y ahí empezó todo, con el impulso del programa rOpenSci Champions.
+
+
+:::
+
+::: {.column width="30%"}
+<br>
+<br>
+
+
+![](images/fine.png)
+
+:::
+
+:::
 
 # rOpenSci Champions program
 
-## de que trata
+## El programa
+
+
+- Es una iniciativa que reconoce y apoya a personas con liderazgo en ciencia abierta, software libre y la comunidad R.
+- Está especialmente orientado a personas de grupos históricamente subrepresentados en estos espacios.
+- Brinda acompañamiento de personas expertas y una red de pares para desarrollar proyectos con impacto, promoviendo una ciencia abierta, reproducible y accesible desde cada realidad local.
+
 
 ## ¿Cuál fue(es) mi proyecto? 
 
@@ -176,8 +247,8 @@ Incluye descripciones detalladas de variables, codificación estandarizada, lice
 
 | Stage | Census years      | Geographic level               | 
 |-------|-------------------|--------------------------------|
-| 1     | 1970              | Nivel Nacional y 24 jurisdicciones  | 
-|       | 1980              | Nivel Nacional                 | 
+| **1**     | **1970**              | **Nivel Nacional y 24 jurisdicciones**  | 
+|       | **1980**              | **Nivel Nacional**                 | 
 | 2     | 1991 and 2001     | Nivel Nacional                 |                                        
 | 3     | 2010              | Nivel Nacional                 |                                        
 | 4     | 2022              | Nivel Nacional                 |                                        
@@ -223,10 +294,6 @@ Incluye descripciones detalladas de variables, codificación estandarizada, lice
 
 
 
-                        
-
-
-
 
 
 # Así nació {ARcenso}
@@ -234,6 +301,8 @@ Incluye descripciones detalladas de variables, codificación estandarizada, lice
 ## Proyecto y equipo
 
 Con el apoyo del Programa de Personas Campeonas de rOpenSci, cohorte 2023–2024, este proyecto está encabezado por Andrea Gómez Vargas, desarrolladora principal, junto a Emanuel Ciardullo como co-desarrollador y Luis D. Verde como mentor.
+
+FOTO EQUIPO
 
 ## Origen ciudadano y profesional
 
@@ -264,7 +333,9 @@ library(arcenso)
 
 
 > Obtener tablas por año o temática censal
+
 <br>
+
 ```{r}
 get_census(year = 1970, 
            topic = "CONDICIONES HABITACIONALES", 
