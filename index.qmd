@@ -24,25 +24,97 @@ knitr:
 from: markdown+emoji
 ---
 
-## Hi {.arg-title1}
+## Hi{.arg-title91}
 
-## ARcenso{.smaller .arg-title2}
+
+::: {.columns}
+
+::: {.column width="40%"}
+
 <br>
 
-Supported by the rOpenSci Champions Program cohort 2023-2024^[[Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)], this project is led by lead developer Andrea Gómez Vargas, co-developer Emanuel Ciardullo, and mentor Luis D. Verde.
+![](images/AndreGomezVargas58-2.jpg){width="90%" style="border-radius: 80%;"}
 
-It is a citizen-driven initiative that emerged from our professional experience working with census data at the National Institute of Statistics and Census of Argentina (INDEC).
-
-
-![](images/icon_lettering_white.svg){width="30%"}
-
-
-
-::: footer
-[**ARcenso - Data from Argentina’s Population Census**](https://soyandrea.github.io/arcenso/)
 :::
 
-## Project Overview {.arg-title3 .smaller}
+::: {.column width="60%"}
+
+- Sociologist
+
+- Learned R through the R community
+
+- Code with a social perspective
+
+- Population Statistics Analyst at INDEC (ONS) in Argentina.
+
+- rOpenSci Champion, Cohort 2023–2024
+
+:::
+
+:::
+
+## Why is census data important?{.arg-title91}
+
+- It helps us understand the population's characteristics and needs.
+
+- It is essential for designing effective public policies.
+
+- It supports social, economic, and territorial planning.
+
+- It is a vital component of academic, social, and market research.
+
+- It is the foundation for evidence-based decision-making.
+
+## The 2022 Census Operation{.arg-title91}
+
+<br>
+
+Argentina conducted its national census in 2022, the country's largest statistical operation. Starting in 2023, we began publishing the final results, to which I contributed.
+
+In addition to presenting the data, we had to edit and generate hundreds of Excel tables using R, which was a very manual process.
+
+
+##  An idea in the middle of chaos{.arg-title91}
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+We had to make many Excel tables. We didn't know if they were useful or even usable. During that process, I thought **this should be a package in R**, but the idea remained up in the air until rOpenSci Champions appeared and took shape.
+
+:::
+
+::: {.column width="30%"}
+<br>
+<br>
+
+
+![](images/fine.png)
+
+:::
+
+:::
+
+## rOpenSci Champions Program  {.arg-title5}
+
+<br>
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+> This is a programme that promotes leadership in open science and free software. It offers mentoring and peer support, particularly for individuals from historically underrepresented groups. 
+
+:::
+
+::: {.column width="30%"}
+
+![](images/icon_short_black.svg)
+:::
+
+:::
+
+## What was (is) my project?  {.arg-title5}
 
 <br>
 
@@ -50,7 +122,7 @@ It is a citizen-driven initiative that emerged from our professional experience 
 **Develop an R data package that makes available the official national population census data of Argentina**, produced by the National Institute of Statistics and Censuses (INDEC), covering the period from 1970 to 2022. The data are homogenized, organized, and ready to use. The package provides open access to these datasets, facilitating their use by the public, researchers, and decision-makers.
 
 
-## Problem Statement {.arg-title4 .smaller}
+## Why? {.arg-title5}
 
 <br>
 
@@ -58,7 +130,7 @@ Historical census results for **1970, 1980, 1991, 2001, 2010 and 2022** in Argen
 
 This fragmentation limits data accessibility, interoperability, and reuse, especially for users working within the R environment.
 
-## Proposed Solution {.arg-title5}
+##  The proposal {.arg-title5}
 
 > From excel tables to **ordered tables** in R
 
@@ -76,27 +148,18 @@ This fragmentation limits data accessibility, interoperability, and reuse, espec
 :::
 
 
-# Conceptual framework {.arg-title6}
+## How it all started: key questions  {.arg-title5}
 
-## FAIR Principles{.smaller .arg-title5}
+> Six censuses to organize, one package to build
 
-**Findable:**
+::: r-stack
+![](images/censos.png){.fragment top="200" left="0" width="80%"}
 
-Centralized census data covering six national census periods (1970–2022), openly published in a single R data package with clear versioning.
 
-**Accessible:**
+![](images/meme.png){.fragment top="50" right="50" width="50%"}
+:::
 
-Publicly available, homogenized census datasets provided in open formats and accompanied by comprehensive documentation and metadata.
-
-**Interoperable:**
-
-Tidy, well-structured tables that enable easy integration with other demographic, geographic, and socioeconomic datasets within the R ecosystem.
-
-**Reusable:**
-
-Includes detailed variable descriptions, standardized coding across census years, open licensing, and reproducible data structures that facilitate long-term use and cross-study comparisons.
-
-## Census Data: Themes and Structure (UN Framework){.smaller .arg-title5}
+## Conceptual Framework: UN Census Data Structure {.smaller .arg-title5}
 
 <br>
 
@@ -134,10 +197,27 @@ Includes detailed variable descriptions, standardized coding across census years
 :::
 
 
-# From Chaos to Package 📦  {.arg-title7}
+
+## Conceptual Framework: FAIR Principles {.smaller .arg-title5}
+
+**Findable:**
+
+Centralized census data covering six national census periods (1970–2022), openly published in a single R data package with clear versioning.
+
+**Accessible:**
+
+Publicly available, homogenized census datasets provided in open formats and accompanied by comprehensive documentation and metadata.
+
+**Interoperable:**
+
+Tidy, well-structured tables that enable easy integration with other demographic, geographic, and socioeconomic datasets within the R ecosystem.
+
+**Reusable:**
+
+Includes detailed variable descriptions, standardized coding across census years, open licensing, and reproducible data structures that facilitate long-term use and cross-study comparisons.
 
 
-## Problems: rain of excels and non-standardized formats {.arg-title5}
+## A Thousand Excels, a Thousand Formats {.arg-title5}
 
 ::: {.r-stack}
 
@@ -147,12 +227,29 @@ Includes detailed variable descriptions, standardized coding across census years
 
 ![](images/cuadro.png){.fragment top=50 right=50 width="80%"}
 
+![](images/meme3.png){.fragment top="50" right="50" width="40%"}
+
+
+![](images/meme2.png){.fragment top="50" right="50" width="40%"}
 
 :::
 
+## From Excel Storms to a Clear Path{.tabla-chica .arg-title5}
 
 
-## The Process {.smaller .arg-title5}
+| Stage | Census years      | Geographic level               | 
+|-------|-------------------|--------------------------------|
+| 1     | 1970              | National and 24 jurisdictions  | 
+|       | 1980              | National level                 | 
+| 2     | 1991 and 2001     | National level                 |                                        
+| 3     | 2010              | National level                 |                                        
+| 4     | 2022              | National level                 |                                        
+| 5     | 1980 and 1991     | 24 jurisdictions               |                                        
+| 6     | 2001 and 2010     | 24 jurisdictions               |                                        
+| 7     | 2022              | 24 jurisdictions               |   
+
+
+## Our technical approach {.smaller .arg-title5}
 
 <br>
 
@@ -188,26 +285,9 @@ Includes detailed variable descriptions, standardized coding across census years
 ::: 
 
 
+# ARcenso: From Idea to Reality {.arg-title2}
 
-## Data Availability Roadmap {.tabla-chica .smaller .arg-title8}
-
-<br>
-
-| Stage | Census years      | Geographic level               | 
-|-------|-------------------|--------------------------------|
-| 1     | 1970              | National and 24 jurisdictions  | 
-|       | 1980              | National level                 | 
-| 2     | 1991 and 2001     | National level                 |                                        
-| 3     | 2010              | National level                 |                                        
-| 4     | 2022              | National level                 |                                        
-| 5     | 1980 and 1991     | 24 jurisdictions               |                                        
-| 6     | 2001 and 2010     | 24 jurisdictions               |                                        
-| 7     | 2022              | 24 jurisdictions               |                                        
-
-
-
-
-## {ARcenso} 📦 {.arg-title8}
+## {ARcenso} 📦 {.arg-title2}
 
 <br>
 
@@ -229,7 +309,7 @@ library(arcenso)
 ```
 
 
-## `get_census()` {.smaller .arg-title2}
+## `get_census()` {.arg-title91}
 
 > get tables 
 
@@ -240,7 +320,7 @@ get_census( year = 1970,
 ```
 
 
-## `check_repository()` {.smaller .arg-title2}
+## `check_repository()`  {.arg-title91}
 
 > report of available tables
 
@@ -253,7 +333,7 @@ check_repository( year = 1970,
 ```
 
 
-## `ARcenso()` {.smaller .arg-title2}
+## `ARcenso()`  {.arg-title91}
 
 > shinyapp for consulting
 
@@ -266,73 +346,114 @@ arcenso()
 ![](images/shiny.png){width="120%" fig-align="center"}
 
 
-## Documentation {.smaller .arg-title5}
+## Documentation  {.arg-title91}
 
 ```{r echo=FALSE}
 knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
 ```
  
-# Powered by Community 🤝  {.arg-title7}
 
-## Thanks to Our Community  {.arg-title5}
-
-![](images/arcenso-meet.png)
-
-Thanks to the feedback, collaboration, and support of R communities such as rOpenSci, LatinR, and R en Buenos Aires, as well as the joint work of fellow demographers, statisticians, and sociologists, `ARcenso` was built.
+## Next steps 💫  {.arg-title91}
 
 
-## Community involvement provided: {.smaller .arg-title2}
+:::::: incremental
+::::: columns
+::: {.column width="40%"}
 
-- Technical assistance in solving coding and data challenges.
+<br>
+<br>
 
-- Validation: Ensuring data quality and usability.
-
-- Dissemination: Promoting the use and awareness of the package.
-
-- Inspiration: driving continuous improvements and new features.
-
-
-<!-- ## Next steps 💫 -->
-
-<!-- ::: {.incremental} -->
-
-
-<!-- - improve documentation -->
-<!-- - continue with the phased roadmap and the process of classification, review and formatting. -->
-<!-- - achieve the optimal standards to reach peer-review -->
-<!-- - to get more users to use the package -->
-
-
-<!-- ::: -->
-
-## Gracias 😁 {.arg-title2}
-
-::: columns
-::: {.column width="50%"}
-
-![](https://avatars.githubusercontent.com/u/45582182?v=4){width="50%" style="border-radius: 80%;"}
-
-[**Andrea**](https://www.linkedin.com/in/andreasociologa/)
-
-Sociologist
-
-
-rOpenSci Champion
-
+![](https://i.pinimg.com/originals/9f/ff/73/9fff730a3d58f7973f6e2891ee468a2d.gif)
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-![](https://avatars.githubusercontent.com/u/64991969?v=4){width="50%" style="border-radius: 80%;"}
+- Improve and expand the package documentation
 
-[**Emanuel**](https://www.linkedin.com/in/eciardullo/)
+- Continue the phased roadmap
 
-Statistician
+- Reach rOpenSci peer review standards
+
+- Increase package adoption and visibility
+
+- Seek institutional support and funding
+
+:::
+:::::
+::::::
+
+## Citizen Origins, Community Purpose  {.arg-title8}
+
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+ARcenso is a citizen-driven initiative that emerged from our professional experience working with census data. 
+
+
+**It was born from the need for accessible, tidy data among data users, and inspired by the collaborative spirit of the R community.**
 
 :::
 
+::: {.column width="30%"}
+
+![](images/arcenso.png)
+
 :::
+
+::: 
+## The People Behind ARcenso  {.arg-title8}
+
+With the support of the rOpenSci Champions Program, cohort 2023–2024, this project is led by Andrea Gómez Vargas, main developer, alongside Emanuel Ciardullo as co-developer and Luis D. Verde as mentor. Tamara Derner designed the project hex logo, and Ariana Bardauil created the Quarto slide theme.
+
+
+![](images/team.png)
+
+## The R Community Powering ARcenso {.arg-title8}
+
+![](images/comunidades.png)
+
+
+> Behind every open-source tool, there’s a community lifting each other up.
+
+
+## A Shared Tool, A Growing Community {.arg-title8}
+
+
+ARcenso has been presented at **local R chapters**, **universities**, and **regional conferences**.  
+
+New users and collaborators joined, strengthening the project and expanding its reach.
+
+ 
+ > What began as a personal need became a shared resource.
+
+
+## From User to Developer {.arg-title8}
+
+
+::: {.columns}
+
+::: {.column width="65%"}
+
+![](images/codehero.png)
+
+:::
+
+::: {.column width="35%"}
+
+I started out searching for solutions. 
+
+I ended up building one.
+
+:::
+
+::: 
+
+## Gracias, thank U!  😁 {.arg-title2}
+
+
 
 
 

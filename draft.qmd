@@ -53,7 +53,7 @@ from: markdown+emoji
 :::
 
 
-## ¿Por qué son importante los datos censales? 
+## ¿Por qué son importante los datos censales?  
 
 
 - Permiten conocer las características y necesidades de la población.
@@ -122,9 +122,9 @@ Además de presentar los datos, debíamos editar y generar cientos de cuadros en
 
 :::
 
-# rOpenSci Champions program
 
-## El programa
+
+## rOpenSci Champions Program
 
 
 - Es una iniciativa que reconoce y apoya a personas con liderazgo en ciencia abierta, software libre y la comunidad R.
@@ -294,19 +294,8 @@ Incluye descripciones detalladas de variables, codificación estandarizada, lice
 
 
 
-
-
 # Así nació {ARcenso}
 
-## Proyecto y equipo
-
-Con el apoyo del Programa de Personas Campeonas de rOpenSci, cohorte 2023–2024, este proyecto está encabezado por Andrea Gómez Vargas, desarrolladora principal, junto a Emanuel Ciardullo como co-desarrollador y Luis D. Verde como mentor.
-
-FOTO EQUIPO
-
-## Origen ciudadano y profesional
-
-{ARcenso} es una iniciativa ciudadana, que surgió a partir de nuestra experiencia profesional con datos censales en el Instituto Nacional de Estadística y Censos de Argentina (INDEC).
 
 ## ¿Cómo usarlo?
 
@@ -368,8 +357,6 @@ arcenso() # shinyapp consulta
 
 ![](images/shiny.png){width="120%" fig-align="center"}
 
-# Próximos pasos y metas :dizzy:
-
 ## :footprints:
 
 :::::: incremental
@@ -390,6 +377,16 @@ arcenso() # shinyapp consulta
 :::
 :::::
 ::::::
+
+## Proyecto y equipo
+
+Con el apoyo del Programa de Personas Campeonas de rOpenSci, cohorte 2023–2024, este proyecto está encabezado por Andrea Gómez Vargas, desarrolladora principal, junto a Emanuel Ciardullo como co-desarrollador y Luis D. Verde como mentor.
+
+FOTO EQUIPO
+
+## Origen ciudadano y profesional
+
+{ARcenso} es una iniciativa ciudadana, que surgió a partir de nuestra experiencia profesional con datos censales en el Instituto Nacional de Estadística y Censos de Argentina (INDEC).
 
 
 
