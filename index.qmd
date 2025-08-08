@@ -29,7 +29,7 @@ from: markdown+emoji
 
 ::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="35%"}
 
 <br>
 
@@ -37,7 +37,7 @@ from: markdown+emoji
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="65%"}
 
 - Sociologist
 
@@ -55,41 +55,61 @@ from: markdown+emoji
 
 ## Why is census data important?{.arg-title91}
 
-- It helps us understand the population's characteristics and needs.
+::: {.columns}
 
-- It is essential for designing effective public policies.
+::: {.column width="3%"}
 
-- It supports social, economic, and territorial planning.
+:::
 
-- It is a vital component of academic, social, and market research.
+::: {.column width="97%"}
 
-- It is the foundation for evidence-based decision-making.
+
+- Helps understand the population's characteristics and needs.
+
+- Is essential for designing effective public policies (social, economic, and territorial planning).
+
+- Serves as a vital component of academic, social, and market research.
+
+- Forms the foundation for evidence-based decision-making.
+
+:::
+
+:::
 
 ## The 2022 Census Operation{.arg-title91}
 
 <br>
 
+::: {.columns}
+
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="90%"}
 Argentina conducted its national census in 2022, the country's largest statistical operation. Starting in 2023, we began publishing the final results, to which I contributed.
 
 In addition to presenting the data, we had to edit and generate hundreds of Excel tables using R, which was a very manual process.
+:::
 
+:::
 
 ##  An idea in the middle of chaos{.arg-title91}
 
 ::: {.columns}
 
-::: {.column width="70%"}
-
-We had to make many Excel tables. We didn't know if they were useful or even usable. During that process, I thought **this should be a package in R**, but the idea remained up in the air until rOpenSci Champions appeared and took shape.
-
-:::
 
 ::: {.column width="30%"}
 <br>
-<br>
-
 
 ![](images/fine.png)
+
+:::
+
+::: {.column width="70%"}
+
+We had to make many Excel tables. We didn't know if they were useful or even usable. During that process, I thought **this should be a package in R**, but the idea remained up in the air until rOpenSci Champions appeared and took shape.
 
 :::
 
@@ -103,7 +123,7 @@ We had to make many Excel tables. We didn't know if they were useful or even usa
 
 ::: {.column width="70%"}
 
-> This is a programme that promotes leadership in open science and free software. It offers mentoring and peer support, particularly for individuals from historically underrepresented groups. 
+This is a programme that promotes leadership in open science and free software. It offers mentoring and peer support, particularly for individuals from historically underrepresented groups. 
 
 :::
 
@@ -200,21 +220,14 @@ This fragmentation limits data accessibility, interoperability, and reuse, espec
 
 ## Conceptual Framework: FAIR Principles {.smaller .arg-title5}
 
-**Findable:**
+<br>
 
-Centralized census data covering six national census periods (1970–2022), openly published in a single R data package with clear versioning.
-
-**Accessible:**
-
-Publicly available, homogenized census datasets provided in open formats and accompanied by comprehensive documentation and metadata.
-
-**Interoperable:**
-
-Tidy, well-structured tables that enable easy integration with other demographic, geographic, and socioeconomic datasets within the R ecosystem.
-
-**Reusable:**
-
-Includes detailed variable descriptions, standardized coding across census years, open licensing, and reproducible data structures that facilitate long-term use and cross-study comparisons.
+<div style="font-size: 1.2em; line-height: 1.6; max-width: 800px; margin: auto;">
+  <p><strong>Findable →</strong> Six national censuses (1970–2022) in one R package, clearly versioned.</p>
+  <p><strong>Accessible →</strong> Open, homogenized datasets with docs & metadata.</p>
+  <p><strong>Interoperable →</strong> Tidy tables ready to integrate with other R data.</p>
+  <p><strong>Reusable →</strong> Standardized codes, open license, reproducible structures.</p>
+</div>
 
 
 ## A Thousand Excels, a Thousand Formats {.arg-title5}
@@ -262,7 +275,7 @@ Includes detailed variable descriptions, standardized coding across census years
 ![](images/R.png)
 <br>
 
-![](images/github.png)
+![](images/github_logo.png)
 
 :::
 
@@ -285,9 +298,9 @@ Includes detailed variable descriptions, standardized coding across census years
 ::: 
 
 
-# ARcenso: From Idea to Reality {.arg-title2}
+# ARcenso: From Idea to Reality {.arg-title91}
 
-## {ARcenso} 📦 {.arg-title2}
+## {ARcenso} 📦 {.arg-title91}
 
 <br>
 
@@ -304,7 +317,6 @@ remotes::install_github("SoyAndrea/arcenso")
 ### Package activation 
 
 ```{r}
-
 library(arcenso)
 ```
 
@@ -421,37 +433,32 @@ With the support of the rOpenSci Champions Program, cohort 2023–2024, this pro
 
 ## A Shared Tool, A Growing Community {.arg-title8}
 
+<br>
+
 
 ARcenso has been presented at **local R chapters**, **universities**, and **regional conferences**.  
 
-New users and collaborators joined, strengthening the project and expanding its reach.
+<br>
 
- 
  > What began as a personal need became a shared resource.
+
+
+
+
+
 
 
 ## From User to Developer {.arg-title8}
 
+![](images/todo.png)
 
-::: {.columns}
-
-::: {.column width="65%"}
-
-![](images/codehero.png)
-
-:::
-
-::: {.column width="35%"}
 
 I started out searching for solutions. 
 
 I ended up building one.
 
-:::
 
-::: 
-
-## Gracias, thank U!  😁 {.arg-title2}
+## Thank U, Gracias! 😁 {.arg-title2}
 
 
 

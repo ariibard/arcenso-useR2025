@@ -3,7 +3,7 @@
 $theme-white: #FEFEFE;
 $theme-lila: #194998;
 $theme-azul: #4469d7;
-$theme-violeta: #1d2d44;
+$theme-violeta: #3c096c;
 $theme-darkvioleta: #020620;
 $theme-green: #5c7c44;
 $theme-otro: #ca8930;
@@ -299,11 +299,11 @@ div.sourceCode {
   }
 
   // Ajuste del ancho del texto general
-  h1, h2, h3, h4, h5, p, pre {
+  /*h1, h2, h3, h4, h5, p, pre {
     margin-left: auto;
     margin-right: auto;
-    width: 80%; // antes 65%
-  }
+    width: 90%; // antes 65%
+  }*/
 
   h1 {
     font-family: 'Lato';
