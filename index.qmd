@@ -15,8 +15,6 @@ format:
     footer: "[**`ARcenso` - Data from Argentina’s Population Census**](https://soyandrea.github.io/arcenso/)"
 title-slide-attributes:
   class: arg-title1
-resources:
-  - assets/*
 knitr:
   opts_chunk: 
     echo: true
