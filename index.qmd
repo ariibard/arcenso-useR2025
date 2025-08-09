@@ -7,11 +7,11 @@ author: "Andrea Gomez Vargas & Emanuel Ciardullo"
 format:
   revealjs: 
     theme: [argento.scss]
+    css: [fondos.css, logo.css]
     self-contained: false
     slide-number: c/t
     logo: userlogo.png
     highlight-style: a11y
-    css: logo.css
     footer: "[**`ARcenso` - Data from Argentina’s Population Census**](https://soyandrea.github.io/arcenso/)"
 title-slide-attributes:
   class: arg-title1
@@ -22,7 +22,6 @@ knitr:
     comment: "#>"
     fig.path: "figures/"
 from: markdown+emoji
-embed-resources: true
 
 ---
 

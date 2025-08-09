@@ -62,12 +62,6 @@ div.sourceCode {
 }
 
 .arg-title1 {
-  &:is(.slide-background) {
-    background-image: url('/assets/1.png') !important;
-    @include background-full;
-  }
-
-
   h2 {
     text-align: center;
     font-size: 3em;
@@ -85,10 +79,6 @@ div.sourceCode {
 
 
 .arg-title2 {
-  &:is(.slide-background) {
-    background-image: url('/assets/2.png');
-    @include background-full;
-  }
   
   color: #FFFFFF;
 
@@ -129,10 +119,6 @@ div.sourceCode {
 
 
 .arg-title3 {
-  &:is(.slide-background) {
-    background-image: url('/assets/6.png') !important;
-    @include background-full;
-  }
 
 
   h2 {
@@ -153,10 +139,6 @@ div.sourceCode {
 
 
 .arg-title4 {
-  &:is(.slide-background) {
-    background-image: url('/assets/7.png') !important;
-    @include background-full;
-  }
   
 
 
@@ -177,11 +159,6 @@ div.sourceCode {
 
 
 .arg-title5 {
-  &:is(.slide-background) {
-    background-image: url('/assets/5.png') !important;
-    @include background-full;
-  }
-  
 
 
   h2 {
@@ -201,10 +178,7 @@ div.sourceCode {
 
 
 .arg-title6 {
-  &:is(.slide-background) {
-    background-image: url('/assets/8.png');
-    @include background-full;
-  }
+
 
 
   /* Cambiar color de títulos */
@@ -232,10 +206,6 @@ div.sourceCode {
 
 
 .arg-title7 {
-  &:is(.slide-background) {
-    background-image: url('/assets/9.png');
-    @include background-full;
-  }
 
 
   /* Cambiar color de títulos */
@@ -270,10 +240,6 @@ div.sourceCode {
 
 
 .arg-title8 {
-  &:is(.slide-background) {
-    background-image: url('/assets/13.png');
-    @include background-full;
-  }
 
   
   h1 {
@@ -294,10 +260,7 @@ div.sourceCode {
 
 
 .arg-title91 {
-  &:is(.slide-background) {
-    background-image: url('/assets/9.png');
-    @include background-full;
-  }
+
 
   // Ajuste del ancho del texto general
   /*h1, h2, h3, h4, h5, p, pre {

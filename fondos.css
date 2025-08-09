@@ -1,0 +1,11 @@
+/* fondos.css */
+.arg-title1:is(.slide-background){ background-image:url('assets/1.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title2:is(.slide-background){ background-image:url('assets/2.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title3:is(.slide-background){ background-image:url('assets/6.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title4:is(.slide-background){ background-image:url('assets/7.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title5:is(.slide-background){ background-image:url('assets/5.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title6:is(.slide-background){ background-image:url('assets/8.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title7:is(.slide-background){ background-image:url('assets/9.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title8:is(.slide-background){ background-image:url('assets/13.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+.arg-title91:is(.slide-background){ background-image:url('assets/9.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+
