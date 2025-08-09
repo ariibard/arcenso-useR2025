@@ -22,6 +22,7 @@ knitr:
     comment: "#>"
     fig.path: "figures/"
 from: markdown+emoji
+embed-resources: true
 
 ---
 
@@ -459,7 +460,7 @@ I started out searching for solutions.
 I ended up building one.
 
 
-# Thank U, Gracias! 😁 {.arg-title2}
+## Thank U, Gracias! 😁 {.arg-title2}
 
 
 
